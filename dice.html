@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dice Game - Murari</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Dice Game</h1>
+    </header>
+
+    <div class="name-inputs">
+      <label for="player1-name">Player 1 Name:</label>
+      <input type="text" id="player1-name" value="Player 1" />
+      <label for="player2-name">Player 2 Name:</label>
+      <input type="text" id="player2-name" value="Player 2" />
+    </div>
+
+    <div class="main-content">
+      <div class="history">
+        <h2>Winning History</h2>
+        <ul id="combined-history"></ul>
+      </div>
+
+      <div class="dice-game">
+        <div class="player" id="player1-section">
+          <h2 id="display-player1-name">Player 1</h2>
+          <img src="images/dice1.png" alt="Player 1 dice" class="dice-img img1" />
+          <button id="roll-player1">Roll Dice</button>
+        </div>
+
+        <div class="player" id="player2-section">
+          <h2 id="display-player2-name">Player 2</h2>
+          <img src="images/dice1.png" alt="Player 2 dice" class="dice-img img2" />
+          <button id="roll-player2" disabled>Roll Dice</button>
+        </div>
+      </div>
+    </div>
+
+    <h1 id="winner-text"></h1>
+    <button id="reset">Reset Round</button>
+    <button id="endgame">End Game</button>
+
+    <footer>
+      <p>Made by Murari</p>
+    </footer>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
